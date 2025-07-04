@@ -12,7 +12,8 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 const mongodbUrl = config.MONGODB_URL;
-
+const dbUrl = config.MONGODB_URL;
+const jwtSecret = config.JWT_SECRET;
 mongoose
     .connect(mongodbUrl, {
         useNewUrlParser: true,
