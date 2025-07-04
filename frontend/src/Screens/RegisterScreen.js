@@ -15,15 +15,13 @@ function RegisterScreen(props) {
         ? props.location.search.split("=")[1]
         : "/";
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        if (userInfo) {
-            props.history.push(redirect);
-        }
-        return () => {
-            //
-        };
-    }, [userInfo]);
+   useEffect(() => {
+    window.scrollTo(0, 0);
+    if (userInfo) {
+        props.history.push(redirect);
+    }
+}, [userInfo, props.history, redirect]); // ✅ Fixed
+
 
     const submitHandler = e => {
         e.preventDefault();
@@ -68,13 +66,16 @@ function RegisterScreen(props) {
                         ></input>
                     </li>
                     <li>
-                        <label htmlFor="repassword">Retype Password</label>
-                        <input
-                            type="repassword"
+                        <label htmlFor="repassword">Retype Password</label> 
+
+                        <input type="password"
                             id="repassword"
+                            value={rePassword}
                             name="repassword"
                             onChange={e => setRePassword(e.target.value)}
                         ></input>
+
+
                     </li>
                     <li>
                         <button type="submit" className="button primary">

@@ -8,10 +8,9 @@
     "npm": "6.x"
   },
   "scripts": {
-     "start": "nodemon --watch backend --exec \"npx babel-node\" backend/server.js",
+    "start": "nodemon --watch backend --exec babel-node backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install cd client && npm run build cd client"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suhassalian27/E-Commerce-Website-using-ReactJS-NodeJS.git"

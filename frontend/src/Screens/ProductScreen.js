@@ -15,7 +15,7 @@ function ProductScreen(props) {
         return () => {
             //
         };
-    }, []);
+    }, [dispatch,props.match.params.id]);
 
     const handleAddToCart = () => {
         props.history.push("/cart/" + props.match.params.id + "?qty=" + qty);
@@ -25,7 +25,7 @@ function ProductScreen(props) {
         <div>
             <div className="back-to-result">
                 <Link to="/">
-                    <span class="material-icons">arrow_back</span>
+                    <span className="material-icons">arrow_back</span>
                 </Link>
             </div>
             {loading ? (

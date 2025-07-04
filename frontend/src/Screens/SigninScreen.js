@@ -20,7 +20,7 @@ function SigninScreen(props) {
         }
         return () => {
         };
-    }, [userInfo]);
+    }, [userInfo, props.history, redirect]);
 
     const submitHandler = e => {
         e.preventDefault();

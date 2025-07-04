@@ -54,7 +54,7 @@ function Coursel() {
                     alt="First slide"
                 />
                 <Carousel.Caption className="caption">
-                    <img src={logo}></img>
+                    <img  alt=""  src={logo}></img>
                     <p>Because time flies,</p>
                     <p>But the <span>memories</span> last forever.</p>
                 </Carousel.Caption>

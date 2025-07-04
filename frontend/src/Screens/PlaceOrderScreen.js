@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "../actions/cartAction";
+//import { addToCart, removeFromCart } from "../actions/cartAction";
 import { Link } from "react-router-dom";
 import CheckoutSteps from "../components/CheckoutSteps";
 
@@ -21,7 +21,7 @@ function PlaceOrderScreen(props) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+    }, [dispatch]);
     const placeOrderHandler = () => {
         props.history.push("/");
         alert("Order placed successfully.");

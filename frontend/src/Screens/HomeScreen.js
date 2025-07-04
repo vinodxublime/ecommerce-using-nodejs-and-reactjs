@@ -15,7 +15,7 @@ function HomeScreen(props) {
         dispatch(listProducts());
         return () => {
         };
-    }, []);
+    }, [dispatch]);
 
     return (
         <div>

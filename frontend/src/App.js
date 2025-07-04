@@ -33,7 +33,7 @@ function App() {
                         <button onClick={openmenu}>&#9776;</button>
                         <Link to="/">
                             Origami
-                            <img src={logo} className="logo" />
+                            <img src={logo} alt=" " className="logo" />
                         </Link>
                     </div>
                     <div className="header-links">
