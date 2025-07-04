@@ -2,7 +2,8 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "server.js",
   "engines": {
     "node": "12.x",
     "npm": "6.x"
@@ -14,9 +15,9 @@
   
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suhassalian27/E-Commerce-Website-using-ReactJS-NodeJS.git"
+    "url": "git+https://github.com/vinodxublime/ecommerce-using-nodejs-and-reactjs"
   },
-  "author": "Suhas Salian",
+  "author": "Vinod",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/suhassalian27/E-Commerce-Website-using-ReactJS-NodeJS/issues"
